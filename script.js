@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         slideIndex = (slideIndex + 1) % slides.length; // Pindah ke slide berikutnya
-        setTimeout(showSlides, 3000); // Ganti slide setiap 3 detik
+        setTimeout(showSlides, 2000); // Ganti slide setiap 2 detik
     }
 
     showSlides();

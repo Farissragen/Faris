@@ -43,10 +43,21 @@ nav ul {
     gap: 20px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+nav a:hover {
+    color: #1fb257;
 }
 
 main {
@@ -104,7 +115,7 @@ main {
     bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.353);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -147,6 +158,22 @@ main {
 
 #beranda ul li {
     margin-bottom: 10px;
+}
+
+.acara {
+    display: inline-block;
+    background-color: #dddddd71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.acara:hover {
+    background-color: #20b358;
 }
 
 .whatsapp-link {
@@ -209,7 +236,7 @@ footer {
 }
 
 .social-link:hover {
-    color: #20b358; /* Warna hover (ubah sesuai kebutuhan) */
+    color: #1fb257; /* Warna hover (ubah sesuai kebutuhan) */
 }
 
 @media (max-width: 768px) {
@@ -217,4 +244,27 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+    .menu {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        top: 60px; /* Sesuaikan dengan tinggi header */
+        left: 0;
+        background-color: #333;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu.active {
+        display: block;
+    }
 }
+
