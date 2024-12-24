@@ -206,12 +206,31 @@ section h2 {
     color: #ffffff;
 }
 
+#scrollTopBtn {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    background-color: #ffffff9a;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none; /* Default hidden */
+}
+
+#scrollTopBtn:hover {
+    background-color: #333;
+}
+
+
 /* Gaya untuk Footer */
 footer {
     color: white;
     padding: 20px 0;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .footer-container {
@@ -231,7 +250,7 @@ footer {
 .social-link {
     margin: 10px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
@@ -254,17 +273,4 @@ footer {
         left: 0;
         background-color: #333;
     }
-
-    .menu li {
-        margin: 10px 0;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .menu.active {
-        display: block;
-    }
 }
-

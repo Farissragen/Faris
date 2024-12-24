@@ -54,3 +54,24 @@ document.addEventListener("DOMContentLoaded", () => {
     // Ekspor fungsi ke global agar tombol bisa memanggilnya
     window.changeSlide = changeSlide;
 });
+
+// Ambil tombol "Back to Top"
+var mybutton = document.getElementById("scrollTopBtn");
+
+// Ketika pengguna menggulir ke bawah 20px dari atas, tampilkan tombol
+window.onscroll = function() {
+    if (document.body.scrollTop > 1700 || document.documentElement.scrollTop > 1700) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
+    }
+};
+
+// Fungsi untuk menggulir halaman ke atas
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Efek gulir halus
+    });
+}
+
